@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Shooting Game</title>
+  <style>
+    .welcome{
+      padding: 50px;
+      text-align: center;
+    }
+    #para{
+      display: flex; 
+      font: 30px arial;
+      background-color: rgba(255, 255, 255, .8);
+      border-radius: 50px;
+      width: fit-content;
+      padding: 0px 20px 0px 20px;
+    }
+    #heading{
+      display: inline;
+      font: 100px arial;
+      background-color: rgba(255, 255, 255, .4);
+      border-radius: 50px;
+      padding: 0px 20px 0px 20px;
+    }
+  </style>
+</head>
+
+<body id="body">
+  <img src="./Images/gun_aim2.png" alt="aim_img" id="gun_aim">
+  <div class="menu">
+    <button id="home" class="btns" class="home" onclick="location.href='./index.html'">Home</button>
+    <button id="l1_btn" class="btns" onclick="location.href='./Levels/Level_1.html'">Level 1</button>
+    <button id="l2_btn" class="btns" onclick="location.href='./Levels/Level_2.html'">Level 2</button>
+    <button id="l3_btn" class="btns" onclick="location.href='./Levels/Level_3.html'">Level 3</button>
+    <button id="l4_btn" class="btns" onclick="location.href='./Levels/Level_4.html'">Level 4</button>
+    <button id="l5_btn" class="btns" onclick="location.href='./Levels/Level_5.html'" >Level 5</button>
+    <button id="l5_btn" class="btns" onclick="location.reload()" >Restart</button>
+  </div>
+  <div class="main-frame" id="mainFrame">
+    <div class="welcome">
+      <!-- <img src="./Images/animated_gifs/flying_bird.gif" height="100px" alt="bird_img" id="bird1" class="bird">
+      <p id="heading">Welcome</p>
+      <img src="./Images/animated_gifs/flying_bird.gif" height="100px" alt="bird_img" id="bird2" class="bird"> -->
+      <!-- <p id="para">Select one of the level above</p> -->
+    </div>
+  </div>
+  <div id="flyingBird" class="flyingBird">
+    <img src="./Images/animated_gifs/flying_bird.gif" height="100px" alt="bird_img" id="birdImg">
+  </div>
+  <script src="script.js"></script>
+  <script src="BirdScript.js"></script>
+</body>
+
+</html>
